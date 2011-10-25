@@ -1,0 +1,11 @@
+{
+  "name": "node-example",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "2.2.0",
+    "backbone": ">=0.5.3",
+    "ender-js": ">=0.3.6",
+    "jQuery": ">=1.6.3",
+  }
+}
