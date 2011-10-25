@@ -4,7 +4,9 @@ var express = require('express'),
 	
 app.use(express.static(__dirname + '/../public'));
 
-console.log('mongodb:', process.env.MONGOHQ_URL);
+app.get('/mongodb', function(req, res){
+	res.send('mongodb: ' + process.env.MONGOHQ_URL);
+});
 
 app.listen(port, function(){
 	console.log('application running on ' + port);
